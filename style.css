@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1571330735066-03aaa9429d89?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page1 {
+  height: 90%;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(128, 85, 7, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 3vw;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3vw;
+}
+.left {
+  height: 90%;
+  width: 45%;
+}
+.left-top {
+  height: 90%;
+  width: 100%;
+  background-position: 50% 0%;
+  background-size: cover;
+  border-radius: 3vw;
+}
+.left-bottom {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+}
+.left-bottom h3 {
+  height: 3vw;
+  width: 3vw;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(128, 85, 7, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 3vw;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-bottom h3:hover {
+  cursor: pointer;
+}
+.left-bottom h3:active {
+  scale: 0.9;
+}
+.left-bottom h3 i {
+  font-size: 1.8vw;
+}
+.right {
+  height: 90%;
+  width: 50%;
+  border-radius: 3vw;
+  padding: 0 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  height: 15vh;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(128, 85, 7, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 3vw;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1vw;
+  margin: 1.5vw 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5vw 0.5vw;
+}
+.simg {
+  height: 100%;
+  width: 20%;
+  pointer-events: none;
+}
+.simg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1vw;
+  pointer-events: none;
+}
+.sname {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.sname h3 {
+  font-size: 1.5vw;
+  font-family: "Courier New", Courier, monospace;
+  pointer-events: none;
+}
+.sdur {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.sdur h3 {
+  font-size: 1.5vw;
+  font-family: "Courier New", Courier, monospace;
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  #main {
+    height: 150vh;
+  }
+  #page1 {
+    height: 90%;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(128, 85, 7, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 3vw;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 1vw;
+  }
+  .left {
+    height: 50%;
+    width: 45%;
+    position: relative;
+  }
+  .left-top {
+    height: 70%;
+    width: 200%;
+    position: absolute;
+    top: 10%;
+    left: -20vw;
+    border-radius: 50%;
+  }
+  .left-bottom {
+    position: absolute;
+    top: 85%;
+    left: -5%;
+  }
+  .left-bottom h3 {
+    height: 12vw;
+    width: 12vw;
+  }
+  .left-bottom h3 i {
+    font-size: 8vw;
+    color: black;
+  }
+  .right {
+    height: 60%;
+    width: 100%;
+  }
+  .box {
+    height: 12vh;
+    padding: 0.5vw 1vw;
+  }
+  .simg {
+    width: 30%;
+  }
+  .simg img {
+    border-radius: 4vw;
+  }
+  .sname h3 {
+    font-size: 3vw;
+  }
+  .sdur h3 {
+    font-size: 2vw;
+  }
+}
